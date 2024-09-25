@@ -37,7 +37,7 @@ if cont == 0:
 else:
     print(0)"""
 
-"""gabarito = input("insira o gabarito: ").split()
+gabarito = input("insira o gabarito: ").split()
 
 alunos = []
 for i in range(3):
@@ -49,8 +49,7 @@ for i in range(3):
     for j in range(len(gabarito)):
         if alunos[i][j] == gabarito[j]:
             nota = nota+12.5
-    print(nota)"""
-#FALTA COMPLETAR
+    print(nota)
 
 
 
