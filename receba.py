@@ -44,12 +44,15 @@ for i in range(3):
     alunos.append(input("insira as respostas dos alunos: ").split())
 
 contador = 0
+aprovados = contador/len(alunos)
 for i in range(3):
-    nota = 0
+    nota = 0.0
     for j in range(len(gabarito)):
         if alunos[i][j] == gabarito[j]:
+            contador+=1
             nota = nota+12.5
     print(nota)
+    print(aprovados)
 
 
 
