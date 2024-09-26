@@ -11,25 +11,10 @@ print("tabela nova")
 for i in filme:
     print(i, ":", filme[i])"""
     
-
-"""telefone = {}
-opcao = int(input("Digite 1 para continuar e 0 para sair: "))
-if opcao!=1 or opcao!= 0:
-    while opcao == 1:
-        novoContato = input("Digite o nome: ")
-        numero = input("Dgitite  o telefone: ")
-        telefone[novoContato] = numero  
-        opcao = int(input("Digite 1 para continuar e 0 para sair: "))
-    else:
-        print("opção inválida")
-print(telefone)"""
-
-vogais = {"a": 0, "e":0, "i": 0, "o": 0, "u": 0}
-
+"""vogais = {"a": 0, "e":0, "i": 0, "o": 0, "u": 0}
 frase= input("Digite a frase que voce deseja: \n")
 tamanhoFrase = len(frase)
 print(tamanhoFrase)
-
 for i in range(tamanhoFrase):
     print(frase[i])
     if frase[i]=="a" or frase[i] == "A":
@@ -42,5 +27,16 @@ for i in range(tamanhoFrase):
         vogais[frase[i]]+=1
     elif frase[i]=="u" or frase[i] == "U":
         vogais[frase[i]]+=1
-    
-print(vogais)
+print(vogais)"""
+
+telefone = {}
+opcao = int(input("Digite 1 para continuar e 0 para sair: "))
+if opcao!=1 or opcao!= 0:
+    while opcao == 1:
+        novoContato = input("Digite o nome: ")
+        numero = input("Dgitite  o telefone: ")
+        telefone[novoContato] = numero  
+        opcao = int(input("Digite 1 para continuar e 0 para sair: "))
+    else:
+        print("opção inválida")
+print(telefone)
