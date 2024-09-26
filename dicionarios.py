@@ -30,7 +30,7 @@ for i in range(tamanhoFrase):
 print(vogais)"""
 
 telefone = {}
-opcao = int(input("Digite 1 para continuar e 0 para sair: "))
+opcao = 1
 if opcao!=1 or opcao!= 0:
     while opcao == 1:
         novoContato = input("Digite o nome: ")
