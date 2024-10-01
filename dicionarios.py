@@ -29,7 +29,7 @@ for i in range(tamanhoFrase):
         vogais[frase[i]]+=1
 print(vogais)"""
 
-telefone = {}
+"""telefone = {}
 opcao = 1
 if opcao!=1 or opcao!= 0:
     while opcao == 1:
@@ -39,4 +39,60 @@ if opcao!=1 or opcao!= 0:
         opcao = int(input("Digite 1 para continuar e 0 para sair: "))
     else:
         print("opção inválida")
-print(telefone)
+print(telefone)"""
+
+"""for i in tabela: #exemplo de como passar um for pra exibir o dicionário
+    valor = tabela[i]
+    print(f"{i}: {valor}")"""
+
+"""vogais={"a":0, "e":0, "i":0, "o":0, "u":0} #outra solução pro problema das vogais
+frase=input()
+for letra in frase:
+  if letra in vogais:
+    vogais[letra]=vogais[letra]+1
+print (vogais)"""
+
+"""pessoa = {}
+
+nomep = input("insira o seu nome: ")
+idadep = int(input("insira a sua idade: "))
+cidadenp = input("insira a sua cidade natal: ")
+trabalhop = input("insira  o seu tabalho: ")
+
+pessoa["nome"] = nomep
+pessoa["idade"] = idadep
+pessoa["cidade natal"] = cidadenp
+pessoa["trabalho"] = trabalhop
+print(pessoa)"""
+
+"""computador = {"processador": 1499.00, "memoria ram": 345.00, "ssd": 482.00, "fonte": 620.00, "placa de video": 2499.00}
+soma = 0
+maior = 0
+
+for i in computador:
+    soma = soma+computador[i]
+    if maior<computador[i]:
+        maior=computador[i]
+print(computador)
+print(soma, maior)"""
+novo = 0
+esp_novo = 0
+lista = []
+for i in range(2):
+    atleta = {}
+    atleta["nome"]= (input("insira o nome do atleta: "))
+    atleta["idade"]= int(input("insira a idade: "))
+    atleta["esporte"] = input("insira o esporte: ")
+    lista.append(atleta)
+
+print("Relação de atletas")
+for i in range(len(lista)):
+    print(lista[i]["nome"], lista[i]["idade"])
+
+esp_maisvelho = 0
+idade = 0
+for i in range(len(lista)):
+    print(lista[i]["nome"], lista[i]["idade"])
+
+
+
