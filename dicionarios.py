@@ -75,7 +75,7 @@ for i in computador:
         maior=computador[i]
 print(computador)
 print(soma, maior)"""
-novo = 0
+"""novo = 0
 esp_novo = 0
 lista = []
 for i in range(2):
@@ -92,7 +92,9 @@ for i in range(len(lista)):
 esp_maisvelho = 0
 idade = 0
 for i in range(len(lista)):
-    print(lista[i]["nome"], lista[i]["idade"])
+    print(lista[i]["nome"], lista[i]["idade"])"""
+
+
 
 
 
