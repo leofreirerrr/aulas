@@ -1,0 +1,55 @@
+import random
+
+# Tamanho do tabuleiro e número máximo de tentativas
+tamanho = 5
+tentativas_max = 5
+
+# Criação do tabuleiro vazio
+tabuleiro_jogador = [['~'] * tamanho for _ in range(tamanho)]
+
+# Geração da posição aleatória do navio inimigo
+linha_navio = random.randint(0, tamanho - 1)
+coluna_navio = random.randint(0, tamanho - 1)
+
+# Exibe uma mensagem de boas-vindas
+print("Bem-vindo ao jogo de Batalha Naval!")
+
+# Exibe o tabuleiro inicial sem funções
+for i in range(tamanho):
+    for j in range(tamanho):
+        print(tabuleiro_jogador[i][j], end=' ')
+    print()  # Nova linha ao fim de cada linha do tabuleiro
+
+# Loop para as tentativas do jogador
+for tentativa in range(tentativas_max):
+    print(f"\nTentativa {tentativa + 1} de {tentativas_max}")
+
+    # Recebe as coordenadas de linha e coluna do jogador
+    linha_tentativa = int(input(f"Escolha uma linha (0-{tamanho - 1}): "))
+    coluna_tentativa = int(input(f"Escolha uma coluna (0-{tamanho - 1}): "))
+
+    # Verifica se as coordenadas são válidas
+    if 0 <= linha_tentativa < tamanho and 0 <= coluna_tentativa < tamanho:
+        # Verifica se acertou o navio
+        if linha_tentativa == linha_navio and coluna_tentativa == coluna_navio:
+            print("Parabéns! Você acertou o navio!")
+            tabuleiro_jogador[linha_tentativa][coluna_tentativa] = 'X'
+        else:
+            # Marca a posição como "água" se errou
+            print("Água!")
+            tabuleiro_jogador[linha_tentativa][coluna_tentativa] = 'O'
+    else:
+        print("Coordenadas fora do tabuleiro!")
+
+    # Exibe o tabuleiro atualizado sem funções
+    for i in range(tamanho):
+        for j in range(tamanho):
+            print(tabuleiro_jogador[i][j], end=' ')
+        print()  # Nova linha ao fim de cada linha do tabuleiro
+
+    # Verifica se é a última tentativa
+    if linha_tentativa == linha_navio and coluna_tentativa == coluna_navio:
+        break
+    elif tentativa == tentativas_max - 1:
+        print("Fim de jogo! Você esgotou suas tentativas.")
+        print(f"O navio estava na posição ({linha_navio}, {coluna_navio}).")
